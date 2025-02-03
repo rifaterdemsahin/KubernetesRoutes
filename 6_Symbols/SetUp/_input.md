@@ -26,7 +26,7 @@ curl http://example.local2fail
 
 kubectl describe ingress example-ingress
 
-- change
+- update test
 minikube start
 minikube addons enable ingress
 kubectl get pods
@@ -34,3 +34,14 @@ kubectl get pods
 cat /etc/hosts
 kubectl apply -f /workspaces/KubernetesRoutes/6_Symbols/SetUp/your-ingress-update.yaml
 curl http://example.local/version-2
+
+- update test iterations
+minikube start
+minikube addons enable ingress
+kubectl get pods
+cat /etc/hosts
+/workspaces/KubernetesRoutes/6_Symbols/SetUp/add_host.sh
+cat /etc/hosts
+- make version-x. > /workspaces/KubernetesRoutes/6_Symbols/SetUp/your-ingress-update.yaml
+kubectl apply -f /workspaces/KubernetesRoutes/6_Symbols/SetUp/your-ingress-update.yaml # See : ingress.networking.k8s.io/version-x-ingress created
+curl http://example.local/version-x
