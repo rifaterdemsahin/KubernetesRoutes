@@ -19,8 +19,10 @@ cat /etc/hosts
 
 kubectl apply -f /workspaces/KubernetesRoutes/6_Symbols/SetUp/your-ingress.yaml
 curl http://example.local
-curl http://example.local2
+curl http://example.local2fail
+
 kubectl describe ingress example-ingress
 
-
-```
+- change
+kubectl apply -f /workspaces/KubernetesRoutes/6_Symbols/SetUp/your-ingress-update.yaml
+curl http://example.local/version-2
