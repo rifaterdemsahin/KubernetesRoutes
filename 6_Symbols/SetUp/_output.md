@@ -1,3 +1,12 @@
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ minikube delete
+🔥  Deleting "minikube" in docker ...
+🔥  Deleting container "minikube" ...
+🔥  Removing /home/codespace/.minikube/machines/minikube ...
+💀  Removed all traces of the "minikube" cluster.
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ ^C
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ 
+---
+
 @rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ minikube start
 😄  minikube v1.34.0 on Ubuntu 20.04 (docker/amd64)
 🎉  minikube 1.35.0 is available! Download it: https://github.com/kubernetes/minikube/releases/tag/v1.35.0
@@ -23,6 +32,12 @@
 
 ---
 
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ chmod +x /workspaces/KubernetesRoutes/6_Symbols/SetUp/add_host.sh
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ /workspaces/KubernetesRoutes/6_Symbols/SetUp/add_host.sh
+Entry added to /etc/hosts
+
+---
+
 @rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ kubectl get nodes
 NAME       STATUS   ROLES           AGE   VERSION
 minikube   Ready    control-plane   69s   v1.31.0
@@ -31,6 +46,11 @@ minikube   Ready    control-plane   69s   v1.31.0
 
 @rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ kubectl apply -f /workspaces/KubernetesRoutes/6_Symbols/SetUp/your-deployment.yaml
 deployment.apps/nginx-deployment created
+
+---
+
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ kubectl apply -f /workspaces/KubernetesRoutes/6_Symbols/SetUp/your-service.yaml
+service/nginx-service created
 
 ---
 
@@ -101,6 +121,10 @@ kube-dns   ClusterIP   10.96.0.10   <none>        53/UDP,53/TCP,9153/TCP   8m7s
 @rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ 
 
 ---
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ chmod +x /workspaces/KubernetesRoutes/6_Symbols/SetUp/add_host.sh
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ /workspaces/KubernetesRoutes/6_Symbols/SetUp/add_host.sh
+Entry added to /etc/hosts
+---
 
 @rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ kubectl apply -f /workspaces/KubernetesRoutes/6_Symbols/SetUp/your-ingress.yaml
 ingress.networking.k8s.io/example-ingress created
@@ -145,3 +169,6 @@ Events:
   ----    ------  ----               ----                      -------
   Normal  Sync    26m (x2 over 27m)  nginx-ingress-controller  Scheduled for sync
 @rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ 
+
+---
+
