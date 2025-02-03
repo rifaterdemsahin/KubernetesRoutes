@@ -17,6 +17,8 @@ chmod +x /workspaces/KubernetesRoutes/6_Symbols/SetUp/add_host.sh
 
 cat /etc/hosts
 
+minikube addons enable ingress
+
 kubectl apply -f /workspaces/KubernetesRoutes/6_Symbols/SetUp/your-ingress.yaml
 curl http://example.local
 curl http://example.local2fail

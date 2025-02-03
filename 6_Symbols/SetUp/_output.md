@@ -205,3 +205,12 @@ Commercial support is available at
 
 <p><em>Thank you for using nginx.</em></p>
 </body>
+
+---
+
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ kubectl apply -f /workspaces/KubernetesRoutes/6_Symbols/SetUp/your-ingress-update.yaml
+ingress.networking.k8s.io/version-2-ingress configured
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ 
+
+---
+
