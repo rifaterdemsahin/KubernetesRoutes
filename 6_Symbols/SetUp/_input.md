@@ -1,7 +1,9 @@
 ```sh
+minikube delete
 minikube start
 kubectl get nodes
 kubectl apply -f /workspaces/KubernetesRoutes/6_Symbols/SetUp/your-deployment.yaml
+kubectl apply -f /workspaces/KubernetesRoutes/6_Symbols/SetUp/your-service.yaml
 minikube addons enable ingress
 kubectl get pods
 minikube addons list | grep ingress
