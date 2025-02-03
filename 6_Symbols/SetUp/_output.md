@@ -124,3 +124,24 @@ s (main) $ sudo nano /etc/hosts
 @rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $  curl http://example.local2
 curl: (6) Could not resolve host: example.local2
 @rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ 
+
+---
+
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ kubectl describe ingress example-ingress
+Name:             example-ingress
+Labels:           <none>
+Namespace:        default
+Address:          192.168.49.2
+Ingress Class:    nginx
+Default backend:  <default>
+Rules:
+  Host           Path  Backends
+  ----           ----  --------
+  example.local  
+                 /   your-service-name:80 (<error: services "your-service-name" not found>)
+Annotations:     <none>
+Events:
+  Type    Reason  Age                From                      Message
+  ----    ------  ----               ----                      -------
+  Normal  Sync    26m (x2 over 27m)  nginx-ingress-controller  Scheduled for sync
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ 

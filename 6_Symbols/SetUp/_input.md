@@ -11,6 +11,7 @@ minikube ip
 kubectl apply -f /workspaces/KubernetesRoutes/6_Symbols/SetUp/your-ingress.yaml
 curl http://example.local
 curl http://example.local2
+kubectl describe ingress example-ingress
 
 
 ```
