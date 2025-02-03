@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the entry
-HOST_ENTRY="192.168.49.2 example.local"
+HOST_ENTRY="192.168.49.2    example.local"
 HOSTS_FILE="/etc/hosts"
 
 # Check if the entry already exists

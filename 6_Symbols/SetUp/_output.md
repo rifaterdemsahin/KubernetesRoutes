@@ -172,3 +172,11 @@ Events:
 
 ---
 
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ kubectl get ingress
+NAME              CLASS    HOSTS           ADDRESS   PORTS   AGE
+example-ingress   <none>   example.local             80      20m
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ 
+
+---
+
+
