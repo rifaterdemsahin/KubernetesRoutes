@@ -214,3 +214,16 @@ ingress.networking.k8s.io/version-2-ingress configured
 
 ---
 
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ kubectl apply -f /workspaces/KubernetesRoutes/6_Symbols/SetUp/your-ingress-update.yaml
+ingress.networking.k8s.io/version-2-ingress unchanged
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ curl http://example.local/version-2
+<html>
+<head><title>503 Service Temporarily Unavailable</title></head>
+<body>
+<center><h1>503 Service Temporarily Unavailable</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+@rifaterdemsahin ➜ /workspaces/KubernetesRoutes (main) $ 
+
+---

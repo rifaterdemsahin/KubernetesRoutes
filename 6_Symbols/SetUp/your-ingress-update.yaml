@@ -14,6 +14,6 @@ spec:
             pathType: ImplementationSpecific
             backend:
               service:
-                name: nginx-service-v2
+                name: nginx-service
                 port:
                   number: 80
