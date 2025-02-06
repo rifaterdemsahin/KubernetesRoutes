@@ -56,3 +56,5 @@ echo "- Use the [+] for completed lines, [-] for not completed lines" >> 1.8.1_r
 echo "- Use emojis" >> 1.8.1_rubberduck.md
 
 echo " time to move the files to the folders "
+# Move the files into the directory
+mv 1.1.1_setup.md 1.2.1_commands.md 1.3.1_journey.drawio 1.4.1_todos.md 1.5.1_debugging.md 1.6.1_prompts.md 1.7.1_files.md 1.8.1_rubberduck.md 1_Journey/
